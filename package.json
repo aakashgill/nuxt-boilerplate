@@ -17,6 +17,7 @@
     "prettier": "^3.0.2"
   },
   "dependencies": {
+    "@nuxthq/studio": "^1.0.13",
     "sass": "^1.66.1"
   }
 }
