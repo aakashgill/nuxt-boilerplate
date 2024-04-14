@@ -1,1 +1,0 @@
-import{a as o,o as s,f as n,g as t,h as e}from"./entry.e8855817.js";const a={class:"page-container"},c=e("div",{class:"py40"},[e("h1",null,"Home page")],-1),_=[c],p=o({__name:"index",setup(d){return s(async()=>{console.log("Mounted code here")}),(r,i)=>(n(),t("div",a,_))}});export{p as default};

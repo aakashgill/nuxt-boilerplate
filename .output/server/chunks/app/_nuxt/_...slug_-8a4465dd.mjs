@@ -1,0 +1,66 @@
+import _sfc_main$1 from './ContentDoc-b58bdbe3.mjs';
+import { useSSRContext } from 'vue';
+import { ssrRenderAttrs, ssrRenderComponent } from 'vue/server-renderer';
+import { _ as _export_sfc } from '../server.mjs';
+import '../../nitro/node-server.mjs';
+import 'node:http';
+import 'node:https';
+import 'node:zlib';
+import 'node:stream';
+import 'node:buffer';
+import 'node:util';
+import 'node:url';
+import 'node:net';
+import 'node:fs';
+import 'node:path';
+import 'fs';
+import 'path';
+import 'unified';
+import 'mdast-util-to-string';
+import 'micromark';
+import 'unist-util-stringify-position';
+import 'micromark-util-character';
+import 'micromark-util-chunked';
+import 'micromark-util-resolve-all';
+import 'micromark-util-sanitize-uri';
+import 'slugify';
+import 'remark-parse';
+import 'remark-rehype';
+import 'remark-mdc';
+import 'hast-util-to-string';
+import 'github-slugger';
+import 'detab';
+import 'remark-emoji';
+import 'remark-gfm';
+import 'rehype-external-links';
+import 'rehype-sort-attribute-values';
+import 'rehype-sort-attributes';
+import 'rehype-raw';
+import './ContentRenderer-9adc9249.mjs';
+import './ContentRendererMarkdown-0dc627f8.mjs';
+import 'property-information';
+import './preview-8a59dd4b.mjs';
+import './ContentQuery-26fa8835.mjs';
+import './query-7864503e.mjs';
+import 'vue-router';
+import '@unhead/ssr';
+import 'unhead';
+import '@unhead/shared';
+
+const _sfc_main = {};
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  const _component_ContentDoc = _sfc_main$1;
+  _push(`<main${ssrRenderAttrs(_attrs)}><div class="page-container page-blog py20">`);
+  _push(ssrRenderComponent(_component_ContentDoc, null, null, _parent));
+  _push(`</div></main>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("pages/blog/[...slug].vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const ____slug_ = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+
+export { ____slug_ as default };
+//# sourceMappingURL=_...slug_-8a4465dd.mjs.map
