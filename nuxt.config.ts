@@ -15,6 +15,12 @@ export default defineNuxtConfig({
       apiBase: process.env.API_BASE,
     },
   },
+  nitro: {
+    prerender: {
+      // Workaround for "Error: [404] Page not found: /manifest.json"
+      failOnError: false,
+    },
+  },
 
   modules: ["@nuxt/content", "@nuxthq/studio"]
 });
