@@ -6,11 +6,15 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+
   devtools: { enabled: true },
   css: ["@/assets/css/main.scss"],
+
   runtimeConfig: {
     public: {
       apiBase: process.env.API_BASE,
     },
   },
+
+  modules: ["@nuxt/content"]
 });
