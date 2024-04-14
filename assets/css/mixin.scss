@@ -1,0 +1,73 @@
+@mixin spacing-classes {
+  @for $i from 0 through 50 {
+    $margin: $i * 1px;
+    .m#{$i} {
+      margin: $margin !important;
+    }
+    .ml#{$i} {
+      margin-left: $margin !important;
+    }
+    .mr#{$i} {
+      margin-right: $margin !important;
+    }
+    .mt#{$i} {
+      margin-top: $margin !important;
+    }
+    .mb#{$i} {
+      margin-bottom: $margin !important;
+    }
+    .my#{$i} {
+      margin-bottom: $margin !important;
+      margin-top: $margin !important;
+    }
+    .mx#{$i} {
+      margin-left: $margin !important;
+      margin-right: $margin !important;
+    }
+    .gap#{$i} {
+      gap: $margin !important;
+    }
+  }
+}
+@include spacing-classes;
+
+@mixin padding-classes {
+  @for $i from 0 through 50 {
+    $padding: $i * 1px;
+    .p#{$i} {
+      padding: $padding !important;
+    }
+    .pl#{$i} {
+      padding-left: $padding !important;
+    }
+    .pr#{$i} {
+      padding-right: $padding !important;
+    }
+    .pt#{$i} {
+      padding-top: $padding !important;
+    }
+    .pb#{$i} {
+      padding-bottom: $padding !important;
+    }
+    .py#{$i} {
+      padding-bottom: $padding !important;
+      padding-top: $padding !important;
+    }
+    .px#{$i} {
+      padding-left: $padding !important;
+      padding-right: $padding !important;
+    }
+  }
+}
+@include padding-classes;
+
+@mixin fontsize-classes {
+  @for $i from 1 through 50 {
+    $fontSize: $i * 1px;
+    .font#{$i} {
+      font-size: $fontSize !important;
+    }
+  }
+}
+
+@include fontsize-classes;
